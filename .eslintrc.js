@@ -17,6 +17,14 @@ module.exports = {
     '@typescript-eslint',
     'prefer-arrow'
   ],
+  settings: {
+    'import/parsers': {
+      '@typescript-eslint/parser': [ '.ts', '.tsx' ],
+    },
+    'import/resolver': {
+      typescript: {},
+    },
+  },
   rules: {
     indent: [ 'warn', 2 ],
     quotes: [ 'warn', 'single' ],
