@@ -1,6 +1,6 @@
 {
   "name": "@cookie/eslint-config",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "main": "index.js",
   "repository": "https://github.com/tony-tsx/cookie-eslint-config.git",
   "author": "tony-tsx <tony.js@zoho.eu>",
