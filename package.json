@@ -1,16 +1,17 @@
 {
-  "name": "@cookie/eslint-config",
+  "name": "@cookiex/eslint-config",
   "version": "0.1.5",
   "main": "index.js",
   "repository": "https://github.com/tony-tsx/cookie-eslint-config.git",
   "author": "tony-tsx <tony.js@zoho.eu>",
   "license": "MIT",
-  "private": true,
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^2.19.0",
     "@typescript-eslint/parser": "^2.19.0",
     "eslint": "^6.8.0",
+    "eslint-plugin-import-helpers": "^1.0.2",
     "eslint-plugin-prefer-arrow": "^1.1.7",
+    "eslint-plugin-sort-class-members": "^1.6.0",
     "typescript": "^3.7.5"
   }
 }
