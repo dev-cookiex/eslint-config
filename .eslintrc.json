@@ -21,6 +21,25 @@
       "typescript": {}
     }
   },
+  "overrides": [ {
+    "files": [
+      "*.{spec,test}.{jsx?,tsx?}",
+      "**/__{mocks,tests}__/**/*.{jsx?,tsx?}"
+    ],
+    "env": {
+      "jest": true,
+      "jest/globals": true
+    },
+    "rules": {
+      "react-native/no-inline-styles": "off"
+    }
+  }, {
+    "files": [ "*.ts", "*.tsx" ],
+    "rules": {
+      "@typescript-eslint/no-unused-vars": [ "error", { "argsIgnorePattern": "^_" } ],
+      "no-unused-vars": "off"
+    }
+  } ],
   "rules": {
     "array-element-newline": [ "warn", { "minItems": 5 } ],
     "space-in-parens": [ "warn", "always" ],
