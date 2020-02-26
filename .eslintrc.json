@@ -15,7 +15,7 @@
   ],
   "settings": {
     "import/parsers": {
-      "@typescript-eslint/parser": [ ".ts", ".tsx" ]
+      "@typescript-eslint/parser": [ ".ts", ".tsx", ".js", ".jsx" ]
     },
     "import/resolver": {
       "typescript": {}
@@ -23,7 +23,7 @@
   },
   "overrides": [ {
     "files": [
-      "*.{spec,test}.{jsx?,tsx?}",
+      "*.{spec,test}.{js,ts,jsx,tsx}",
       "**/__{mocks,tests}__/**/*.{jsx?,tsx?}"
     ],
     "env": {
@@ -32,12 +32,6 @@
     },
     "rules": {
       "react-native/no-inline-styles": "off"
-    }
-  }, {
-    "files": [ "*.ts", "*.tsx" ],
-    "rules": {
-      "@typescript-eslint/no-unused-vars": [ "error", { "argsIgnorePattern": "^_" } ],
-      "no-unused-vars": "off"
     }
   } ],
   "rules": {
@@ -121,6 +115,8 @@
         "order": "asc",
         "ignoreCase": true
       }
-    } ]
+    } ],
+    "@typescript-eslint/no-unused-vars": [ "error", { "argsIgnorePattern": "^_" } ],
+    "no-unused-vars": "off"
   }
 }
