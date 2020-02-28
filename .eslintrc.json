@@ -21,19 +21,6 @@
       "typescript": {}
     }
   },
-  "overrides": [ {
-    "files": [
-      "*.{spec,test}.{js,ts,jsx,tsx}",
-      "**/__{mocks,tests}__/**/*.{jsx?,tsx?}"
-    ],
-    "env": {
-      "jest": true,
-      "jest/globals": true
-    },
-    "rules": {
-      "react-native/no-inline-styles": "off"
-    }
-  } ],
   "rules": {
     "array-element-newline": [ "warn", { "minItems": 5 } ],
     "space-in-parens": [ "warn", "always" ],
