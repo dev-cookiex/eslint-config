@@ -42,7 +42,20 @@
       }
     } ],
   "rules": {
-    "array-element-newline": [ "warn", { "minItems": 5 } ],
+    "array-element-newline": [ "warn", "never" ],
+    "array-bracket-spacing": [ "warn", "always" ],
+    "array-bracket-newline": [ "warn", "never" ],
+    "max-params": [ "warn", 3 ],
+    "max-len": [ "warn", {
+      "code": 80,
+      "tabWidth": 2,
+      "comments": 80,
+      "ignoreUrls": true,
+      "ignoreStrings": true,
+      "ignoreTemplateLiterals": true,
+      "ignoreRegExpLiterals": true
+    } ],
+    "comma-spacing": [ "warn", { "before": false, "after": true } ],
     "space-in-parens": [ "warn", "always" ],
     "indent": [ "warn", 2, { "SwitchCase": 1 } ],
     "no-var": [ "warn" ],
