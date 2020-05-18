@@ -47,7 +47,7 @@
     "array-bracket-newline": [ "warn", "never" ],
     "max-params": [ "warn", 3 ],
     "max-len": [ "warn", {
-      "code": 80,
+      "code": 120,
       "tabWidth": 2,
       "comments": 80,
       "ignoreUrls": true,
