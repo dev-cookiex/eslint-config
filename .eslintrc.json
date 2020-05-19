@@ -127,7 +127,7 @@
     "import-helpers/order-imports": [ "warn", {
       "newlinesBetween": "always",
       "groups": [
-        [ "@cookiex", "cookiex" ],
+        [ "/^@cookiex/", "/^cookiex/" ],
         "module",
         "/^~/",
         [ "parent", "sibling", "index" ]
