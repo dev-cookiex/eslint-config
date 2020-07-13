@@ -42,14 +42,14 @@
       }
     } ],
   "rules": {
-    "array-element-newline": [ "warn", "never" ],
+    "array-element-newline": [ "warn", { "multiline": true, "minItems": 5 } ],
     "array-bracket-spacing": [ "warn", "always" ],
-    "array-bracket-newline": [ "warn", "never" ],
-    "max-params": [ "warn", 3 ],
+    "array-bracket-newline": [ "warn", { "multiline": true, "minItems": 5 } ],
+    "max-params": [ "warn", 4 ],
     "max-len": [ "warn", {
       "code": 120,
       "tabWidth": 2,
-      "comments": 80,
+      "comments": 120,
       "ignoreUrls": true,
       "ignoreStrings": true,
       "ignoreTemplateLiterals": true,
@@ -108,11 +108,11 @@
     "grouped-accessor-pairs": [ "warn" ],
     "no-multi-assign": "off",
     "class-methods-use-this": "warn",
-    "consistent-return": "warn",
+    "consistent-return": [ "warn", { "treatUndefinedAsUnspecified": true } ],
     "default-case": "warn",
     "default-param-last": "warn",
     "dot-location": [ "warn", "property" ],
-    "dot-notation": [ "warn", { "allowKeywords": false, "allowPattern": "^[a-z]+(_[a-z]+)+$" } ],
+    "dot-notation": [ "warn", { "allowKeywords": true, "allowPattern": "^[a-z]+(_[a-z]+)+$" } ],
     "eqeqeq": [ "warn", "always" ],
     "max-classes-per-file": [ "error", 1 ],
     "no-alert": [ "warn" ],
@@ -137,7 +137,10 @@
         "ignoreCase": true
       }
     } ],
-    "@typescript-eslint/no-unused-vars": [ "error", { "argsIgnorePattern": "^_" } ],
+    "@typescript-eslint/no-unused-vars": [ "error", {
+      "argsIgnorePattern": "^_",
+      "varsIgnorePattern": "[iI]gnored"
+    } ],
     "no-unused-vars": "off"
   }
 }
