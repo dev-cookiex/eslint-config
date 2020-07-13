@@ -5,6 +5,10 @@
   "repository": "https://github.com/tony-tsx/cookie-eslint-config.git",
   "author": "tony-tsx <tony.js@zoho.eu>",
   "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "yarn build"
+  },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^2.19.0",
     "@typescript-eslint/parser": "^2.19.0",
