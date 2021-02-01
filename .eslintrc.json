@@ -66,8 +66,8 @@
     "prefer-arrow-callback": [ "warn" ],
     "prefer-arrow/prefer-arrow-functions": [ "warn", {
       "disallowPrototype": true,
-      "classPropertiesAllowed": true,
-      "singleReturnOnly": false
+      "singleReturnOnly": false,
+      "classPropertiesAllowed": false
     } ],
     "eol-last": [ "warn", "always" ],
     "no-await-in-loop": "warn",
@@ -108,7 +108,7 @@
     "grouped-accessor-pairs": [ "warn" ],
     "no-multi-assign": "off",
     "class-methods-use-this": "warn",
-    "consistent-return": [ "warn", { "treatUndefinedAsUnspecified": true } ],
+    "consistent-return": "off",
     "default-case": "warn",
     "default-param-last": "warn",
     "dot-location": [ "warn", "property" ],
