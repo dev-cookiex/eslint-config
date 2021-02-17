@@ -1,2 +1,2 @@
-import config from './.eslintrc.json';
+import config from './.eslintrc.json'
 export = config;
